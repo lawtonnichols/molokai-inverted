@@ -18,7 +18,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="molokai"
+let g:colors_name="molokai-inv"
 
 if exists("g:molokai_original")
     let s:molokai_original = g:molokai_original
@@ -27,108 +27,108 @@ else
 endif
 
 
-hi Boolean         guifg=#AE81FF
-hi Character       guifg=#E6DB74
-hi Number          guifg=#AE81FF
-hi String          guifg=#E6DB74
-hi Conditional     guifg=#F92672               gui=bold
-hi Constant        guifg=#AE81FF               gui=bold
-hi Cursor          guifg=#000000 guibg=#F8F8F0
-hi iCursor         guifg=#000000 guibg=#F8F8F0
-hi Debug           guifg=#BCA3A3               gui=bold
-hi Define          guifg=#66D9EF
-hi Delimiter       guifg=#8F8F8F
-hi DiffAdd                       guibg=#13354A
-hi DiffChange      guifg=#89807D guibg=#4C4745
-hi DiffDelete      guifg=#960050 guibg=#1E0010
-hi DiffText                      guibg=#4C4745 gui=italic,bold
+hi Boolean         guifg=#517e00
+hi Character       guifg=#19248b
+hi Number          guifg=#517e00
+hi String          guifg=#19248b
+hi Conditional     guifg=#06d98d               gui=bold
+hi Constant        guifg=#517e00               gui=bold
+hi Cursor          guifg=#ffffff guibg=#07070f
+hi iCursor         guifg=#ffffff guibg=#07070f
+hi Debug           guifg=#435c5c               gui=bold
+hi Define          guifg=#992610
+hi Delimiter       guifg=#707070
+hi DiffAdd                       guibg=#eccab5
+hi DiffChange      guifg=#767f82 guibg=#b3b8ba
+hi DiffDelete      guifg=#69ffaf guibg=#e1ffef
+hi DiffText                      guibg=#b3b8ba gui=italic,bold
 
-hi Directory       guifg=#A6E22E               gui=bold
-hi Error           guifg=#E6DB74 guibg=#1E0010
-hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
-hi Exception       guifg=#A6E22E               gui=bold
-hi Float           guifg=#AE81FF
-hi FoldColumn      guifg=#465457 guibg=#000000
-hi Folded          guifg=#465457 guibg=#000000
-hi Function        guifg=#A6E22E
-hi Identifier      guifg=#FD971F
-hi Ignore          guifg=#808080 guibg=bg
-hi IncSearch       guifg=#C4BE89 guibg=#000000
+hi Directory       guifg=#591dd1               gui=bold
+hi Error           guifg=#19248b guibg=#e1ffef
+hi ErrorMsg        guifg=#06d98d guibg=#dcdad9 gui=bold
+hi Exception       guifg=#591dd1               gui=bold
+hi Float           guifg=#517e00
+hi FoldColumn      guifg=#b9aba8 guibg=#ffffff
+hi Folded          guifg=#b9aba8 guibg=#ffffff
+hi Function        guifg=#591dd1
+hi Identifier      guifg=#0268e0
+hi Ignore          guifg=#7f7f7f guibg=bg
+hi IncSearch       guifg=#3b4176 guibg=#ffffff
 
-hi Keyword         guifg=#F92672               gui=bold
-hi Label           guifg=#E6DB74               gui=none
-hi Macro           guifg=#C4BE89               gui=italic
-hi SpecialKey      guifg=#66D9EF               gui=italic
+hi Keyword         guifg=#06d98d               gui=bold
+hi Label           guifg=#19248b               gui=none
+hi Macro           guifg=#3b4176               gui=italic
+hi SpecialKey      guifg=#992610               gui=italic
 
-hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
-hi ModeMsg         guifg=#E6DB74
-hi MoreMsg         guifg=#E6DB74
-hi Operator        guifg=#F92672
+hi MatchParen      guifg=#ffffff guibg=#0268e0 gui=bold
+hi ModeMsg         guifg=#19248b
+hi MoreMsg         guifg=#19248b
+hi Operator        guifg=#06d98d
 
 " complete menu
-hi Pmenu           guifg=#66D9EF guibg=#000000
-hi PmenuSel                      guibg=#808080
-hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#66D9EF
+hi Pmenu           guifg=#992610 guibg=#ffffff
+hi PmenuSel                      guibg=#7f7f7f
+hi PmenuSbar                     guibg=#f7f7f7
+hi PmenuThumb      guifg=#992610
 
-hi PreCondit       guifg=#A6E22E               gui=bold
-hi PreProc         guifg=#A6E22E
-hi Question        guifg=#66D9EF
-hi Repeat          guifg=#F92672               gui=bold
-hi Search          guifg=#000000 guibg=#FFE792
+hi PreCondit       guifg=#591dd1               gui=bold
+hi PreProc         guifg=#591dd1
+hi Question        guifg=#992610
+hi Repeat          guifg=#06d98d               gui=bold
+hi Search          guifg=#ffffff guibg=#00186d
 " marks
-hi SignColumn      guifg=#A6E22E guibg=#232526
-hi SpecialChar     guifg=#F92672               gui=bold
-hi SpecialComment  guifg=#7E8E91               gui=bold
-hi Special         guifg=#66D9EF guibg=bg      gui=italic
+hi SignColumn      guifg=#591dd1 guibg=#dcdad9
+hi SpecialChar     guifg=#06d98d               gui=bold
+hi SpecialComment  guifg=#81716e               gui=bold
+hi Special         guifg=#992610 guibg=bg      gui=italic
 if has("spell")
-    hi SpellBad    guisp=#FF0000 gui=undercurl
-    hi SpellCap    guisp=#7070F0 gui=undercurl
-    hi SpellLocal  guisp=#70F0F0 gui=undercurl
-    hi SpellRare   guisp=#FFFFFF gui=undercurl
+    hi SpellBad    guisp=#00ffff gui=undercurl
+    hi SpellCap    guisp=#8f8f0f gui=undercurl
+    hi SpellLocal  guisp=#8f0f0f gui=undercurl
+    hi SpellRare   guisp=#000000 gui=undercurl
 endif
-hi Statement       guifg=#F92672               gui=bold
-hi StatusLine      guifg=#455354 guibg=fg
-hi StatusLineNC    guifg=#808080 guibg=#080808
-hi StorageClass    guifg=#FD971F               gui=italic
-hi Structure       guifg=#66D9EF
-hi Tag             guifg=#F92672               gui=italic
-hi Title           guifg=#ef5939
-hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
+hi Statement       guifg=#06d98d               gui=bold
+hi StatusLine      guifg=#baacab guibg=fg
+hi StatusLineNC    guifg=#7f7f7f guibg=#f7f7f7
+hi StorageClass    guifg=#0268e0               gui=italic
+hi Structure       guifg=#992610
+hi Tag             guifg=#06d98d               gui=italic
+hi Title           guifg=#10a6c6
+hi Todo            guifg=#000000 guibg=bg      gui=bold
 
-hi Typedef         guifg=#66D9EF
-hi Type            guifg=#66D9EF               gui=none
-hi Underlined      guifg=#808080               gui=underline
+hi Typedef         guifg=#992610
+hi Type            guifg=#992610               gui=none
+hi Underlined      guifg=#7f7f7f               gui=underline
 
-hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
-hi VisualNOS                     guibg=#403D3D
-hi Visual                        guibg=#403D3D
-hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
-hi WildMenu        guifg=#66D9EF guibg=#000000
+hi VertSplit       guifg=#7f7f7f guibg=#f7f7f7 gui=bold
+hi VisualNOS                     guibg=#bfc2c2
+hi Visual                        guibg=#bfc2c2
+hi WarningMsg      guifg=#000000 guibg=#cccccc gui=bold
+hi WildMenu        guifg=#992610 guibg=#ffffff
 
-hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
-hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
+hi TabLineFill     guifg=#e4e2e1 guibg=#e4e2e1
+hi TabLine         guibg=#e4e2e1 guifg=#7f7f7f gui=none
 
 if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
-   hi Comment         guifg=#75715E
-   hi CursorLine                    guibg=#3E3D32
-   hi CursorLineNr    guifg=#FD971F               gui=none
-   hi CursorColumn                  guibg=#3E3D32
-   hi ColorColumn                   guibg=#3B3A32
-   hi LineNr          guifg=#BCBCBC guibg=#3B3A32
-   hi NonText         guifg=#75715E
-   hi SpecialKey      guifg=#75715E
+   hi Normal          guifg=#07070d guibg=#d8d7dd
+   hi Comment         guifg=#8a8ea1
+   hi CursorLine                    guibg=#c1c2cd
+   hi CursorLineNr    guifg=#0268e0               gui=none
+   hi CursorColumn                  guibg=#c1c2cd
+   hi ColorColumn                   guibg=#c4c5cd
+   hi LineNr          guifg=#434343 guibg=#c4c5cd
+   hi NonText         guifg=#8a8ea1
+   hi SpecialKey      guifg=#8a8ea1
 else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
-   hi Comment         guifg=#7E8E91
-   hi CursorLine                    guibg=#293739
-   hi CursorLineNr    guifg=#FD971F               gui=none
-   hi CursorColumn                  guibg=#293739
-   hi ColorColumn                   guibg=#232526
-   hi LineNr          guifg=#465457 guibg=#232526
-   hi NonText         guifg=#465457
-   hi SpecialKey      guifg=#465457
+   hi Normal          guifg=#07070d guibg=#e4e2e1
+   hi Comment         guifg=#81716e
+   hi CursorLine                    guibg=#d6c8c6
+   hi CursorLineNr    guifg=#0268e0               gui=none
+   hi CursorColumn                  guibg=#d6c8c6
+   hi ColorColumn                   guibg=#dcdad9
+   hi LineNr          guifg=#b9aba8 guibg=#dcdad9
+   hi NonText         guifg=#b9aba8
+   hi SpecialKey      guifg=#b9aba8
 end
 
 "
@@ -136,138 +136,138 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
-      hi CursorLine               ctermbg=235   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      hi Normal                   ctermbg=254
+      hi CursorLine               ctermbg=253   cterm=none
+      hi CursorLineNr ctermfg=33               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
-      hi CursorLine               ctermbg=234   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      hi Normal       ctermfg=236 ctermbg=255
+      hi CursorLine               ctermbg=254   cterm=none
+      hi CursorLineNr ctermfg=33               cterm=none
    endif
-   hi Boolean         ctermfg=135
-   hi Character       ctermfg=144
-   hi Number          ctermfg=135
-   hi String          ctermfg=144
-   hi Conditional     ctermfg=161               cterm=bold
-   hi Constant        ctermfg=135               cterm=bold
-   hi Cursor          ctermfg=16  ctermbg=253
-   hi Debug           ctermfg=225               cterm=bold
-   hi Define          ctermfg=81
-   hi Delimiter       ctermfg=241
+   hi Boolean         ctermfg=70
+   hi Character       ctermfg=60
+   hi Number          ctermfg=70
+   hi String          ctermfg=60
+   hi Conditional     ctermfg=49               cterm=bold
+   hi Constant        ctermfg=70               cterm=bold
+   hi Cursor          ctermfg=15  ctermbg=235
+   hi Debug           ctermfg=0               cterm=bold
+   hi Define          ctermfg=124
+   hi Delimiter       ctermfg=247
 
-   hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
-   hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffAdd                     ctermbg=216
+   hi DiffChange      ctermfg=239 ctermbg=249
+   hi DiffDelete      ctermfg=48 ctermbg=157
+   hi DiffText                    ctermbg=243 cterm=bold
 
-   hi Directory       ctermfg=118               cterm=bold
-   hi Error           ctermfg=219 ctermbg=89
-   hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
-   hi Exception       ctermfg=118               cterm=bold
-   hi Float           ctermfg=135
-   hi FoldColumn      ctermfg=67  ctermbg=16
-   hi Folded          ctermfg=67  ctermbg=16
-   hi Function        ctermfg=118
-   hi Identifier      ctermfg=208               cterm=none
-   hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+   hi Directory       ctermfg=93               cterm=bold
+   hi Error           ctermfg=22 ctermbg=121
+   hi ErrorMsg        ctermfg=47 ctermbg=15    cterm=bold
+   hi Exception       ctermfg=93               cterm=bold
+   hi Float           ctermfg=70
+   hi FoldColumn      ctermfg=137  ctermbg=15
+   hi Folded          ctermfg=137  ctermbg=15
+   hi Function        ctermfg=93
+   hi Identifier      ctermfg=33               cterm=none
+   hi Ignore          ctermfg=8 ctermbg=15
+   hi IncSearch       ctermfg=17 ctermbg=15
 
-   hi keyword         ctermfg=161               cterm=bold
-   hi Label           ctermfg=229               cterm=none
-   hi Macro           ctermfg=193
-   hi SpecialKey      ctermfg=81
+   hi keyword         ctermfg=49               cterm=bold
+   hi Label           ctermfg=17               cterm=none
+   hi Macro           ctermfg=17
+   hi SpecialKey      ctermfg=124
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
-   hi ModeMsg         ctermfg=229
-   hi MoreMsg         ctermfg=229
-   hi Operator        ctermfg=161
+   hi MatchParen      ctermfg=255  ctermbg=33 cterm=bold
+   hi ModeMsg         ctermfg=17
+   hi MoreMsg         ctermfg=17
+   hi Operator        ctermfg=49
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=16
-   hi PmenuSel        ctermfg=255 ctermbg=242
-   hi PmenuSbar                   ctermbg=232
-   hi PmenuThumb      ctermfg=81
+   hi Pmenu           ctermfg=124  ctermbg=15
+   hi PmenuSel        ctermfg=233 ctermbg=246
+   hi PmenuSbar                   ctermbg=15
+   hi PmenuThumb      ctermfg=124
 
-   hi PreCondit       ctermfg=118               cterm=bold
-   hi PreProc         ctermfg=118
-   hi Question        ctermfg=81
-   hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=0   ctermbg=222   cterm=NONE
+   hi PreCondit       ctermfg=93               cterm=bold
+   hi PreProc         ctermfg=93
+   hi Question        ctermfg=124
+   hi Repeat          ctermfg=49               cterm=bold
+   hi Search          ctermfg=15   ctermbg=4   cterm=NONE
 
    " marks column
-   hi SignColumn      ctermfg=118 ctermbg=235
-   hi SpecialChar     ctermfg=161               cterm=bold
-   hi SpecialComment  ctermfg=245               cterm=bold
-   hi Special         ctermfg=81
+   hi SignColumn      ctermfg=93 ctermbg=253
+   hi SpecialChar     ctermfg=49               cterm=bold
+   hi SpecialComment  ctermfg=243               cterm=bold
+   hi Special         ctermfg=124
    if has("spell")
-       hi SpellBad                ctermbg=52
-       hi SpellCap                ctermbg=17
-       hi SpellLocal              ctermbg=17
+       hi SpellBad                ctermbg=159
+       hi SpellCap                ctermbg=229
+       hi SpellLocal              ctermbg=229
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
-   hi Statement       ctermfg=161               cterm=bold
-   hi StatusLine      ctermfg=238 ctermbg=253
-   hi StatusLineNC    ctermfg=244 ctermbg=232
-   hi StorageClass    ctermfg=208
-   hi Structure       ctermfg=81
-   hi Tag             ctermfg=161
-   hi Title           ctermfg=166
-   hi Todo            ctermfg=231 ctermbg=232   cterm=bold
+   hi Statement       ctermfg=49               cterm=bold
+   hi StatusLine      ctermfg=250 ctermbg=235
+   hi StatusLineNC    ctermfg=8 ctermbg=15
+   hi StorageClass    ctermfg=33
+   hi Structure       ctermfg=124
+   hi Tag             ctermfg=49
+   hi Title           ctermfg=39
+   hi Todo            ctermfg=0 ctermbg=15   cterm=bold
 
-   hi Typedef         ctermfg=81
-   hi Type            ctermfg=81                cterm=none
-   hi Underlined      ctermfg=244               cterm=underline
+   hi Typedef         ctermfg=124
+   hi Type            ctermfg=124                cterm=none
+   hi Underlined      ctermfg=8               cterm=underline
 
-   hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
-   hi VisualNOS                   ctermbg=238
-   hi Visual                      ctermbg=235
-   hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
-   hi WildMenu        ctermfg=81  ctermbg=16
+   hi VertSplit       ctermfg=8 ctermbg=15   cterm=bold
+   hi VisualNOS                   ctermbg=250
+   hi Visual                      ctermbg=253
+   hi WarningMsg      ctermfg=0 ctermbg=250   cterm=bold
+   hi WildMenu        ctermfg=124  ctermbg=15
 
-   hi Comment         ctermfg=59
-   hi CursorColumn                ctermbg=236
-   hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=236
-   hi NonText         ctermfg=59
+   hi Comment         ctermfg=247
+   hi CursorColumn                ctermbg=252
+   hi ColorColumn                 ctermbg=252
+   hi LineNr          ctermfg=238 ctermbg=252
+   hi NonText         ctermfg=247
 
-   hi SpecialKey      ctermfg=59
+   hi SpecialKey      ctermfg=247
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
-       hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi Normal       ctermfg=236 ctermbg=254
+       hi CursorLine               ctermbg=252   cterm=none
+       hi CursorLineNr ctermfg=33               cterm=none
 
-       hi Boolean         ctermfg=141
-       hi Character       ctermfg=222
-       hi Number          ctermfg=141
-       hi String          ctermfg=222
-       hi Conditional     ctermfg=197               cterm=bold
-       hi Constant        ctermfg=141               cterm=bold
+       hi Boolean         ctermfg=64
+       hi Character       ctermfg=4
+       hi Number          ctermfg=64
+       hi String          ctermfg=4
+       hi Conditional     ctermfg=49               cterm=bold
+       hi Constant        ctermfg=64               cterm=bold
 
-       hi DiffDelete      ctermfg=125 ctermbg=233
+       hi DiffDelete      ctermfg=85 ctermbg=255
 
-       hi Directory       ctermfg=154               cterm=bold
-       hi Error           ctermfg=222 ctermbg=233
-       hi Exception       ctermfg=154               cterm=bold
-       hi Float           ctermfg=141
-       hi Function        ctermfg=154
-       hi Identifier      ctermfg=208
+       hi Directory       ctermfg=57               cterm=bold
+       hi Error           ctermfg=4 ctermbg=255
+       hi Exception       ctermfg=57               cterm=bold
+       hi Float           ctermfg=64
+       hi Function        ctermfg=57
+       hi Identifier      ctermfg=33
 
-       hi Keyword         ctermfg=197               cterm=bold
-       hi Operator        ctermfg=197
-       hi PreCondit       ctermfg=154               cterm=bold
-       hi PreProc         ctermfg=154
-       hi Repeat          ctermfg=197               cterm=bold
+       hi Keyword         ctermfg=49               cterm=bold
+       hi Operator        ctermfg=49
+       hi PreCondit       ctermfg=57               cterm=bold
+       hi PreProc         ctermfg=57
+       hi Repeat          ctermfg=49               cterm=bold
 
-       hi Statement       ctermfg=197               cterm=bold
-       hi Tag             ctermfg=197
-       hi Title           ctermfg=203
-       hi Visual                      ctermbg=238
+       hi Statement       ctermfg=49               cterm=bold
+       hi Tag             ctermfg=49
+       hi Title           ctermfg=37
+       hi Visual                      ctermbg=250
 
-       hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=235
-       hi NonText         ctermfg=239
-       hi SpecialKey      ctermfg=239
+       hi Comment         ctermfg=8
+       hi LineNr          ctermfg=249 ctermbg=253
+       hi NonText         ctermfg=249
+       hi SpecialKey      ctermfg=249
    endif
 end
 
